@@ -13,9 +13,9 @@
     - Help & Support
 - Getting Started
     - Installation
+    - Directory Structure
     - Configuration
     - Bootstrap
-    - Project Structure
     - Starting Project
 - Bootstrap
     - Service Container

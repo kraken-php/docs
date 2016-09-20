@@ -16,7 +16,7 @@
     - Directory Structure
     - Configuration
     - Bootstrap
-    - Starting Project
+    - Project Deployment
 - Bootstrap
     - Service Container
     - Service Providers

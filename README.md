@@ -14,6 +14,7 @@
 - Getting Started
     - Installation
     - Configuration
+    - Bootstrap
     - Project Structure
     - Starting Project
 - Bootstrap

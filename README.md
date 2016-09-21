@@ -12,43 +12,44 @@ This repository contains official documentation for [Kraken Framework](https://g
 ## Table of Contents
 
 - Introduction
-    - About the Kraken
-    - About the Documentation
-    - Help & Support
+    - [About the Kraken](about-kraken.md)
+    - [About the Documentation](about-documentation.md)
+    - [Help & Support](help.md)
 - Getting Started
-    - Installation
-    - Directory Structure
-    - Configuration
-    - Bootstrap
-    - Project Deployment
+    - [Installation](installation.md)
+    - [Directory Structure](structure.md)
+    - [Configuration](configuration.md)
+    - [Bootstrap](bootstrap.md)
+    - [Project Deployment](deployment.md)
 - Bootstrap
-    - Service Container
-    - Service Providers
+    - [Service Container](service-container.md)
+    - [Service Providers](service-providers.md)
 - Core Concepts
-    - Asynchronity
-    - Events & Timers
-    - Promises
-    - Runtime Containers
-    - Message Delivery
-    - Supervision & Monitoring
+    - [Asynchronity](asynchronity.md)
+    - [Events & Timers](events.md)
+    - [Promises](promises.md)
+    - [Runtime Containers](runtime-containers.md)
+    - [Message Delivery](message-delivery.md)
+    - [Supervision & Monitoring](supervision.md)
 - CLI Support
-    - Console & Server
+    - [Console](console-client.md)
+    - [Server](console-server.md)
 - Components APIs
-    - Channel
-    - Config
-    - Container
-    - Core
-    - Event
-    - Filesystem
-    - Ipc
-    - Log
-    - Loop
-    - Network
-    - Promise
-    - Runtime
-    - Stream
-    - Supervision
-    - Throwable
+    - [Channel](api-channel.md)
+    - [Config](api-config.md)
+    - [Container](api-container.md)
+    - [Core](api-core.md)
+    - [Event](api-event.md)
+    - [Filesystem](api-filesystem.md)
+    - [Ipc](api-ipc.md)
+    - [Log](api-log.md)
+    - [Loop](api-loop.md)
+    - [Network](api-network.md)
+    - [Promise](api-promise.md)
+    - [Runtime](api-runtime.md)
+    - [Stream](api-stream.md)
+    - [Supervision](api-supervision.md)
+    - [Throwable](api-throwable.md)
 
 ## Contributing
 

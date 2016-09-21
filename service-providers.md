@@ -97,7 +97,7 @@ To sum everything said in this article up to this point, here you can see exempl
         protected function boot(ContainerInterface $container)
         {
             // Since boot method is fired after everything has been registered, you dont need to put services used here in $requires field.
-            $runtime = $container->make(RuntimeInterface::class);
+            $runtime = $container->make(RuntimeContainerInterface::class);
             $wamp    = $container->make(WampServerInterface::class);
             
             $runtime->onStart(function() use($wamp) {

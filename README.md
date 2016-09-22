@@ -21,9 +21,6 @@ This repository contains official documentation for [Kraken Framework](https://g
     - [Configuration](configuration.md)
     - [Bootstrap](bootstrap.md)
     - [Project Deployment](deployment.md)
-- Bootstrap
-    - [Service Container](service-container.md)
-    - [Service Providers](service-providers.md)
 - Core Concepts
     - [Asynchronity](asynchronity.md)
     - [Events & Timers](events.md)
@@ -31,9 +28,16 @@ This repository contains official documentation for [Kraken Framework](https://g
     - [Runtime Containers](runtime-containers.md)
     - [Message Delivery](message-delivery.md)
     - [Supervision & Monitoring](supervision.md)
+- Bootstrap
+    - [Service Container](service-container.md)
+    - [Service Providers](service-providers.md)
 - CLI Support
-    - [Console](console-client.md)
-    - [Server](console-server.md)
+    - [Console Client](console-client.md)
+    - [Console Server](console-server.md)
+- Common Patterns
+    - [Adding Providers](#adding-providers.md)
+    - [Adding Services](#adding-services.md)
+    - [Adding Commands](#adding-commands.md)
 - Components APIs
     - [Channel](api-channel.md)
     - [Config](api-config.md)

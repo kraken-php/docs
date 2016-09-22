@@ -35,10 +35,10 @@ This repository contains official documentation for [Kraken Framework](https://g
     - [Console Client](console-client.md)
     - [Console Server](console-server.md)
 - Common Patterns
-    - [Registering Providers](#registering-providers.md)
-    - [Registering Services](#registering-services.md)
-    - [Adding Commands](#adding-commands.md)
-    - [Adding Runtime Listeners](#adding-runtime-listeners.md)
+    - [Registering Providers](registering-providers.md)
+    - [Registering Services](registering-services.md)
+    - [Adding Commands](adding-commands.md)
+    - [Adding Runtime Listeners](adding-runtime-listeners.md)
 - Components
     - [Channel](api-channel.md)
     - [Config](api-config.md)

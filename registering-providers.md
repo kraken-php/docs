@@ -1,13 +1,13 @@
-# Adding Providers
+# Registering Providers
 
 - [Introduction](#introduction)
-- [Adding Providers](#adding-providers)
+- [Registering Providers](#registering-providers)
 
 <a name="introduction"></a>
 ## Introduction
 
-<a name="adding-providers"></a>
-### Adding Providers
+<a name="registering-providers"></a>
+### Registering Providers
 
 To define custom providers for any runtime go to its corresponding bootstrap file and add them to `providers` list. It might look like this:
 

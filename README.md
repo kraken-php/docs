@@ -23,7 +23,7 @@ This repository contains official documentation for [Kraken Framework](https://g
     - [Project Deployment](deployment.md)
 - Core Concepts
     - [Asynchronity](asynchronity.md)
-    - [Events & Timers](events.md)
+    - [Events & Event-Loop](events.md)
     - [Promises](promises.md)
     - [Runtime Containers](runtime-containers.md)
     - [Message Delivery](message-delivery.md)

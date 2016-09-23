@@ -98,4 +98,4 @@ Promises represent the eventual results of an asynchronous operations. They allo
 <a name="event-loop"></a>
 ### Event-Loop
 
-Event loop is central part of any Kraken-based application. It is an infite loop that queues and resolves callbacks allowing for asynchronous processing on single thread. Kraken implements loop using [Kraken/Loop](/docs/{{version}}/api-loop) component. You can read more about how loop can be used in [loop section](/docs/{{version}}/events/#event-loop).
+Event loop is central part of any Kraken-based application. It is an infite loop that queues and resolves callbacks allowing for asynchronous processing on single thread. Kraken implements loop using [Kraken/Loop](/docs/{{version}}/api-loop) component. You can read more about how loop can be used in [loop section](/docs/{{version}}/events#event-loop).

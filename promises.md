@@ -262,21 +262,21 @@ The `any` method returns a promise that will be resolved when any of the promise
 The `map` method is promise-based implementation of `array_map` function which can return either value or another promise.
 
 <a name="the-some-method"></a>
-### The `some` method
+### The `some` Method
 
     Promise::some($promisesOrValues, $howMany);
 
 The `some` method returns a promise that will be resolved when specified number of the supplied items in passed collection resolve. The resolution value of the returned promise will be an array containing the resolution values of the triggering items.
 
 <a name="the-race-method"></a>
-### The `race` method
+### The `race` Method
 
     Promise::race($promisesOrValues);
 
 The `race` method initiates a competitive race that allows one winner. Returns a promise which is resolved with the same value as the first settled promise.
 
 <a name="the-reduce-method"></a>
-### The `reduce` method
+### The `reduce` Method
 
     Promise::reduce($promisesOrValues, callable $reduceFunc, $initialValue = null);
 

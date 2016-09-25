@@ -126,19 +126,19 @@ ServerComponentInterface is an interface that have to be implemented by each of 
 <a name="important-directories"></a>
 ## Important Directories
 
-This section contains list of most important classes and interfaces shipped with this component. It **does not include all** classes and interface.
+This section contains list of most important subdirectories placed inside this component. It **does not include all** its subdirectories.
 
 <a name="http"></a>
-## Http
+### Http
 
 Http directory contains HTTP server wrapper and all of its components.
 
 <a name="socket"></a>
-## Socket
+### Socket
 
 Socket directory contains TCP server wrapper and all of its components.
 
-<a name="http"></a>
-## Websocket
+<a name="websocket"></a>
+### Websocket
 
 Websocket directory contains Websocket server wrapper and all of its components.

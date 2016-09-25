@@ -26,8 +26,8 @@ This repository contains official documentation for [Kraken Framework](https://g
     - [Events & Event-Loop](events.md)
     - [Promises](promises.md)
     - [Runtimes](runtimes.md)
-    - [Message Delivery](message-delivery.md)
-    - [Supervision & Monitoring](supervision.md)
+    - [Messaging](messaging.md)
+    - [Supervision](supervision.md)
 - Bootstrap
     - [Service Container](service-container.md)
     - [Service Providers](service-providers.md)

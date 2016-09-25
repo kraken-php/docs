@@ -117,12 +117,12 @@ Now channel is properly configured and can be run via `start` method and stopppe
 
     $channel->start();
 
-> {tip} If you are using full technological stack of Kraken Framework, then the channels for communication is configured and created automatically, sou you won't have to do this yourself.
+> {tip} If you are using full technological stack of Kraken Framework, then the channels for communication are configured and created automatically, so you don't have to do this yourself.
 
 <a name="composing-channels"></a>
 ### Composing Channels
 
-Previously shown channel creation allows you to work with only one endpoint. To use multiple endpoints you have to create a channel instance for each one of them, and then compose then using `Kraken\Channel\ChannelComposite` class.
+Previously shown channel creation allows you to work with only one endpoint. To use multiple endpoints you have to create a channel instance for each one of them, and then compose them using `Kraken\Channel\ChannelComposite` class.
 
     $composite = new ChannelComposite([
         $id = 'name',
@@ -164,7 +164,7 @@ As you can see `ChannelComposite` has its own set of routers allowing you to cre
             return;
         }
         
-        $bus->push(
+        $bus->send(
             $params['alias'], 
             $params['protocol'],
             $params['flags'],
@@ -188,13 +188,13 @@ All messages passed via channels are asynchronous. To send a message use `send` 
 
 The `send` method propagates message to output router, which then decides how message should be send. It is the method that should be used the most frequently.
 
-    $status = $channel->send($containerAddressee, $message);
+    $status = $channel->send($addressee, $message);
 
 #### The `push` Method
 
 The `push` method sends message directly, without using router. Thanks to this behaviour it is more performant than `send` method, but is not available to resolve addressees which are not directly connected to the container.
 
-    $status = $channel->push($directAddressee, $message);
+    $status = $channel->push($addressee, $message);
 
 <a name="sending-requests"></a>
 ### Sending Requests
@@ -235,7 +235,7 @@ To trigger manual pull of given message, use `pull` method. In contrast to `rece
 
     $channel->pull($sender, $protocol);
 
-> {tip} This method is especially useful in creating of input routing.
+> {tip} This method is especially useful while creating input routing.
 
 <a name="routing"></a>
 ### Routing

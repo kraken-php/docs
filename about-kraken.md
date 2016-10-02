@@ -83,7 +83,7 @@ It is scalable for multiple processes and threads, faster than traditional PHP a
 higher amount of connections that Node.js.
 
 <p align="center">
-<img src="https://docs.google.com/uc?export=download&id=0B_FVuB10kPjVT21lY3JzVTRwT3c" width="882" height="334" />
+<img src="https://docs.google.com/uc?export=download&id=0B_FVuB10kPjVT21lY3JzVTRwT3c" width="760" height="287" />
 </p>
 
 <a name="licensing"></a>

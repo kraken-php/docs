@@ -1,4 +1,4 @@
-# Project Structure
+# Directory Structure
 
 - [Introduction](#introduction)
 - [App Directory](#app-directory)
@@ -8,9 +8,10 @@
     - [`autorun` Directory](#autorun-directory)
     - [`bootstrap` Directory](#bootstrap-directory)
     - [`config` Directory](#config-directory)
-    - [`config.env` Directory](#config-env-directory)
+    - [`environment` Directory](#environment-directory)
     - [`log` Directory](#log-directory)
     - [`storage` Directory](#storage-directory)
+    - [`temp` Directory](#temp-directory)
 - [The kraken File](#kraken-file)
 - [The kraken.server File](#kraken-server-file)
 
@@ -50,10 +51,10 @@ The `bootstrap` directory contains files that bootstrap Kraken runtimes and conf
 
 The `config` directory, contains all of your runtimes' configuration files. You might want to browse through these files and familiarize yourself with all of the options available to you.
 
-<a name="config-env-directory"></a>
-### Config.env Directory
+<a name="environment-directory"></a>
+### Environment Directory
 
-The `config.env` directory, contains your application environment settings.
+The `environment` directory, contains your application environment settings.
 
 <a name="log-directory"></a>
 ### Log Directory
@@ -63,7 +64,12 @@ The `log` directory is a place where all of your application logs will be writte
 <a name="storage-directory"></a>
 ### Storage Directory
 
-The `storage` directory is a place where temporary files and cache will be stored.
+The `storage` directory is a place where storage files and cache will be stored.
+
+<a name="temp-directory"></a>
+### Temp Directory
+
+The `temp` directory is a directory which contains temporary files.
 
 <a name="kraken-file"></a>
 ## Kraken File

@@ -39,7 +39,7 @@ After the process is finished, you will find in downloaded package, minimal conf
 
 #### Run Scripts
 
-There are four important scripts that Framework uses that you should be aware of. Firstly, `kraken` and `kraken.server` being placed in project root are used for starting CLI client and CLI server. Secondly, 'kraken.process` and `kraken.thread` files inside `data/autorun` directory are responsible for running processes and threads inside your application. You can modify content of this files to customize provided bootstrap mechanics and change default application paths.
+There are four important scripts that Framework uses that you should be aware of. Firstly, `kraken` and `kraken.server` being placed in project root are used for starting CLI client and CLI server. Secondly, `kraken.process` and `kraken.thread` files inside `data/autorun` directory are responsible for running processes and threads inside your application. You can modify content of this files to customize provided bootstrap mechanics and change default application paths.
 
 #### Bootstrap Files
 

@@ -27,7 +27,7 @@ This documentation uses several conventions to help explain concepts and documen
 
 Note boxes will contain supplementary information set apart from the text.
 
-> {note} This is note box.
+> {notice} This is note box.
 
 Tip boxes will offer helpful advices on code usage and best practices.
 

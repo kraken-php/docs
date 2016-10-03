@@ -108,7 +108,6 @@ To sum everything said in this article up to this point, here you can see exempl
             });
         }
     }
-}
 
 <a name="registering-providers"></a>
 ## Registering Providers

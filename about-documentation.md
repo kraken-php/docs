@@ -25,11 +25,17 @@ This documentation uses several conventions to help explain concepts and documen
 
 *Italic* and **bold** type faces are used to provide emphasis. `Monospace` text is used for class names, function names, variable names and paths. It is also used for console commands and terminal return values.
 
-> {note} Note boxes will contain supplementary information set apart from the text.
+Note boxes will contain supplementary information set apart from the text.
 
-> {tip} Tip boxes will offer helpful advices on code usage and best practices.
+> {note} This is note box.
 
-> {warning} warning boxes will help you avoid any problems or unexpected behaviours.
+Tip boxes will offer helpful advices on code usage and best practices.
+
+> {tip} This is tip box.
+
+Warning boxes will help you avoid any problems or unexpected behaviours.
+
+> {warning} This is warning box.
 
 Prototypes for class methods are described using the following syntax:
 

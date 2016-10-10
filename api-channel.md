@@ -22,7 +22,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-Channel is an event-based component that allows sending and receiving messsages asynchronously. It provides abstraction for various IPC models and is designed to be used in multi-threaded, multi-processed systems. It provides complex routing mechanisms, protocols, message encoders and extends behaviour of decorated IPC models by implementing hearbeat mechanisms, reconnect mechanisms and allowing usage of both async and request-reply messaging patterns.
+Channel is an event-based component that allows sending and receiving messages asynchronously. It provides abstraction for various IPC models and is designed to be used in multi-threaded, multi-processed systems. It provides complex routing mechanisms, protocols, message encoders and extends behaviour of decorated IPC models by implementing hearbeat mechanisms, reconnect mechanisms and allowing usage of both async and request-reply messaging patterns.
 
 <a name="introduction"></a>
 ## Features
@@ -113,7 +113,7 @@ After creating a channel, it has empty routing, so all messages send or received
         );
     });
     
-Now channel is properly configured and can be run via `start` method and stoppped with `stop` method.
+Now channel is properly configured and can be run via `start` method and stopped with `stop` method.
 
     $channel->start();
 
@@ -259,7 +259,7 @@ The `addRule` method of router enables you to create a routing rule. A rule cont
 
 #### The `addDefault` Method
 
-The `addDefault` method of router allows you to create handler that will be executed if not one matcher returns true. In constrast to matcher, all of default methods are always executed.
+The `addDefault` method of router allows you to create handler that will be executed if not one matcher returns true. In contrast to matcher, all of default methods are always executed.
 
     $router->addDefault(
         function($alias, ProtocolInterface $protocol, $flags, callable $success = null, callable $failure = null, callable $cancel = null, $timeout = 0.0) {
@@ -293,7 +293,7 @@ For example creating a rule that matches only messages sent from container with 
 
 All of Kraken channel's method allows you to work on either string messages or `ProtocolInterface` ones. As described in [messaging article](/docs/{{version}}/messaging), channel used underneath only `ProtocolInterface` messages which he creates for you automatically from string messages. Sometime however, you might want to create this `ProtocolInterface` message manually.
 
-Consider an example in which you want to create a message that will be passed from A container to C, via a B one. In default behaviour this cannot be done, because if you address the message to B, then C won't receive it, and if you address it to C, then the routing mechanism won't know what to do with this. To help you in sitaution like this you can create a `ProtocolInterface` manually and assign its fields. The assigned fields won't be overwritten by channel, but the fields that you will leave, still will be.
+Consider an example in which you want to create a message that will be passed from A container to C, via a B one. In default behaviour this cannot be done, because if you address the message to B, then C won't receive it, and if you address it to C, then the routing mechanism won't know what to do with this. To help you in situation like this you can create a `ProtocolInterface` manually and assign its fields. The assigned fields won't be overwritten by channel, but the fields that you will leave, still will be.
 
     $protocol = $channel->createProtocol($message);
     $protocol->setDestination('C'); // this will mark a message as addressed for C container

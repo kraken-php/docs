@@ -9,7 +9,7 @@
     - [Using Timers](#using-timers)
     - [Using Streams](#using-streams)
     - [Catching Throwables](#catching-throwables)
-- [Advenced Patterns](#advanced-patterns)
+- [Advanced Patterns](#advanced-patterns)
     - [Registering Temporary Listeners](#registering-temporary-listeners)
     - [Registering Delayed Listeners](#registering-delayed-listeners)
     - [Changing Loop Model](#changing-loop-model)
@@ -19,9 +19,9 @@
 <a name="introduction"></a>
 ## Introduction
 
-The most important feature of Kraken Framework architecture is it being **event-driven**, which allows you to write fully asynchronous and scallable applications. You might not be familiar with this architectural design by its name, but it is almost sure that you encountered it already in other programming langauges, like in JavaScript for example.
+The most important feature of Kraken Framework architecture is it being **event-driven**, which allows you to write fully asynchronous and scalable applications. You might not be familiar with this architectural design by its name, but it is almost sure that you encountered it already in other programming languages, like in JavaScript for example.
 
-This article will focus on describing how event-driven architecture is implemented in Kraken and presenting offered possibilites by framework.
+This article will focus on describing how event-driven architecture is implemented in Kraken and presenting offered possibilities by framework.
 
 <a name="event-driven-architecture"></a>
 ## Event-driven Architecture
@@ -43,7 +43,7 @@ In above example, registered function might be considered an **event listener** 
 
 #### PHP Example
 
-PHP does not provide any tools for using events out of the box. They have to be made, and this is exactly what Kraken does. It provides your application a set of tools that allows you using event-driven architecture in PHP. The presented article will focus mainly on core tools, centered arount the idea of [events](#events) and [events-loop](#events-loop).
+PHP does not provide any tools for using events out of the box. They have to be made, and this is exactly what Kraken does. It provides your application a set of tools that allows you using event-driven architecture in PHP. The presented article will focus mainly on core tools, centered around the idea of [events](#events) and [events-loop](#events-loop).
 
 Previous example could be written in PHP using Kraken Event tools in the following way:
 
@@ -65,11 +65,11 @@ To emit an event use `emit` method.
     $emitter = new EventEmitter();
     $emitter->emit('myEvent');
 
-Additionaly, you can parametrize the event by passing an array of values in second argument, like:
+Additionally, you can parametrize the event by passing an array of values in second argument, like:
 
     $emitter->emit('myEvent', [ $firstParam, $secondParam ]);
 
-The `emit` function will iterate through the collection of registered listeners to `myEvent` event, and call all of them in the order they were registerd, one after another. If not one listener was registered during emitting of event, nothing will happen.
+The `emit` function will iterate through the collection of registered listeners to `myEvent` event, and call all of them in the order they were registered, one after another. If not one listener was registered during emitting of event, nothing will happen.
 
 To create event listener `on` method should be used:
 
@@ -90,7 +90,7 @@ Aside from `on` method there are a few others useful methods for creating listen
 <a name="event-loop"></a>
 ### Event-Loop
 
-In event-driven application keeping track and ordering the events might become quite troublesome task, especially when events transfering start to become mainly non-blocking. To aid you with this problem, Kraken provides you its custom event-loop implementation, which acts as a central location for registering and ordering interests.
+In event-driven application keeping track and ordering the events might become quite troublesome task, especially when events transferring start to become mainly non-blocking. To aid you with this problem, Kraken provides you its custom event-loop implementation, which acts as a central location for registering and ordering interests.
 
 The event loop schedules listeners, runs timers, handles signals, and polls streams for pending reads and available writes. There are several event loop backgrounds available depending on your application environment. The `Kraken\Loop\Model\SelectLoop` is the basic one using PHP `stream_select` function. It will work on any PHP installation, but is not as performant as other available models. You can change this model to another via `loop.model` configuration option. All event loops implement `Kraken\Loop\LoopInterface` and provide the same features. 
 
@@ -105,7 +105,7 @@ Queuing functions to event loop allows your application to become more responsiv
         // this will be executed as soon as possible!
     });
 
-For more control about how callbacks are qeued you can also consider using `onBeforeTick` or `onAfterTick` methods.
+For more control about how callbacks are queued you can also consider using `onBeforeTick` or `onAfterTick` methods.
 
 <a name="using-timers"></a>
 ### Using Timers
@@ -144,7 +144,7 @@ To write data to streams use:
 <a name="catching-throwables"></a>
 ### Catching Throwables
 
-All unhandled throwables thrown inside of event will make your application to enter `failure` state, and try to solve the problem using local superivision system, which will then decide what should be done.
+All unhandled throwables thrown inside of event will make your application to enter `failure` state, and try to solve the problem using local supervision system, which will then decide what should be done.
 
 <a name="advanced-patterns"></a>
 ## Advanced Patterns
@@ -186,9 +186,9 @@ All of the available loop models can be found in `Kraken\Loop\Model` namespace. 
 <a name="using-multiple-loops"></a>
 ### Using Multiple Loops
 
-Kraken allows you to used multiple loops by providing `import` and `export` methods. As the name suggests these methods allow you to save your loop state and export it to or import from extenal storage. Thanks to that feature, multiple loops and switching between them can be done. 
+Kraken allows you to used multiple loops by providing `import` and `export` methods. As the name suggests these methods allow you to save your loop state and export it to or import from external storage. Thanks to that feature, multiple loops and switching between them can be done. 
 
-In default configuration, Kraken Framework uses two loops. The frist one is used under normal execution flow, and second one for `failure` state. This ensures, that your application will be able to respond to failures immediataly as they happen allowing you to solve problems using loop queue safely.
+In default configuration, Kraken Framework uses two loops. The first one is used under normal execution flow, and second one for `failure` state. This ensures, that your application will be able to respond to failures immediately as they happen allowing you to solve problems using loop queue safely.
 
 <a name="using-react-bridge"></a>
 ### Using React Bridge

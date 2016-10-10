@@ -97,4 +97,4 @@ PSR-3 compatible interface for logging.
 
     class LoggerFactory
  
-Factory for creating Kraken-compatbile instances of Monolog handlers, processors and formatters.
+Factory for creating Kraken-compatible instances of Monolog handlers, processors and formatters.

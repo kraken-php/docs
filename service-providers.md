@@ -49,7 +49,7 @@ Within the `unregister` method, you should contain reverse logic of `register` m
 
 As your project grows you might find yourself in situation that you have to register a service, that requires usage of another service, defined in separate provider. To help you with this kind of situations, Kraken allows for each provider to define its `requires` and `provides` protected fields.
 
-The `requires` field should be an array containing the list of all services that your provider requires. This field will help Kraken to sort all registered providers in right order and ensure, that required services exists duriging registration of the provided that required them.
+The `requires` field should be an array containing the list of all services that your provider requires. This field will help Kraken to sort all registered providers in right order and ensure, that required services exists during registration of the provided that required them.
 
     protected $requires = [
         'App\Service\CustomService\CustomServiceInterface'  
@@ -64,7 +64,7 @@ The `provides` field should be an array containing the list of all services that
 <a name="booting-up"></a>
 ### Booting Up
 
-Previously, it has been stated that registering and unregistering services should concern only binding of definitions. There are cases, that you additionaly might need to apply some custom logic to your service, as - for example - creating event listeners that allows your service respond to Kraken runtime behaviour. This kind of logic should be put into `boot` method. The `boot` method is called after all other service providers have been registered, giving you access to all other services. 
+Previously, it has been stated that registering and unregistering services should concern only binding of definitions. There are cases, that you additionally might need to apply some custom logic to your service, as - for example - creating event listeners that allows your service respond to Kraken runtime behaviour. This kind of logic should be put into `boot` method. The `boot` method is called after all other service providers have been registered, giving you access to all other services. 
 
 <a name="exemplary-provider"></a>
 ### Exemplary Provider
@@ -135,7 +135,7 @@ To register new alias add it at the end of the `aliases` list:
         'myService' => 'App\Service\MyServiceInterface'
     ];
 
-> {warning} The aliases cannot be used inside of serivce providers' `register` and `unregister` methods, as they are created after all providers have been registered.
+> {warning} The aliases cannot be used inside of service providers' `register` and `unregister` methods, as they are created after all providers have been registered.
 
 <a name="default-providers"></a>
 ## Default Providers

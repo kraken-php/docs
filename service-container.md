@@ -12,14 +12,14 @@
 <a name="introduction"></a>
 ## Introduction
 
-Kraken service container is a powerful tool for managing class dependencies and performing dependency injection. Dependency injection is a process of configuring your concrete objects via "injecting" its dependencies via the constructor or setter method. It allows to decouple components in your application in order to write clean and testable code. You can read more about depenency injection in [this document](http://www.phptherightway.com/#dependency_injection).
+Kraken service container is a powerful tool for managing class dependencies and performing dependency injection. Dependency injection is a process of configuring your concrete objects via "injecting" its dependencies via the constructor or setter method. It allows to decouple components in your application in order to write clean and testable code. You can read more about dependency injection in [this document](http://www.phptherightway.com/#dependency_injection).
 
 <a name="binding"></a>
 ## Binding
 
 The most of your service container bindings will be registered within [service providers](/docs/{{version}}/service-providers), so the examples provided will focus on using the container in that context.
 
-> {tip} There is no need to bind classes into the container if they do not depend on any interfaceso or primitve values. The container is able to build these objects automatically resolving its dependencies using [auto wiring](#auto-wiring).
+> {tip} There is no need to bind classes into the container if they do not depend on any interfaces or primitve values. The container is able to build these objects automatically resolving its dependencies using [auto wiring](#auto-wiring).
 
 <a name="binding-basics"></a>
 ### Binding Basics
@@ -99,5 +99,5 @@ If you want to overwrite default params of class being made, you can specify new
 
 Kraken service container has the power to automatically resolve objects and their dependencies recursively by inspecting the type hints of your constructor arguments via reflections. This, however, does not work for objects that require primitive values or interfaces.
 
-You can read more about service container in its own [section](/docs/{{version}}/api-container). The default providers shipped with the Kraken Framework can be found in [servie providers section](/docs/{{version}}/service-providers).
+You can read more about service container in its own [section](/docs/{{version}}/api-container). The default providers shipped with the Kraken Framework can be found in [service providers section](/docs/{{version}}/service-providers).
 

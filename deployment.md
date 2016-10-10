@@ -15,7 +15,7 @@ Kraken provides your application with powerful console-based [client](/docs/{{ve
 <a name="project-deployment"></a>
 ## Project Deployment
 
-To successfuly deploy project using Kraken Framework you have to remember it is necessary to start Kraken Server and keep it running the whole time.
+To successfully deploy project using Kraken Framework you have to remember it is necessary to start Kraken Server and keep it running the whole time.
 
 To start server simply run command:
 

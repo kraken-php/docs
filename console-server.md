@@ -11,7 +11,7 @@
 
 Kraken Server is the instance of console lister, that allows you to invoke all of your CLI commands remotely. It has to be created and run all the time alongside your application.
 
-> {notice} Kraken Server is designed to work transparently, so your application won't be able to detect or react to its downtimes. On test or dev environments it is not an issue, however before publishing your application we strongy recommend you to read [deployment section](/docs/{{version}}/deployment).
+> {notice} Kraken Server is designed to work transparently, so your application won't be able to detect or react to its downtimes. On test or dev environments it is not an issue, however before publishing your application we strongly recommend you to read [deployment section](/docs/{{version}}/deployment).
 
 <a name="working-with-server"></a>
 ## Working With Server

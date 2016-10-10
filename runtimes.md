@@ -29,7 +29,7 @@ Runtimes are common name for both processes and threads created by Kraken. They 
 <a name="container-definition"></a>
 ### Container Definition
 
-Container is an instance of any given runtime that *contains* both runtime's logic and all of its services. Container is Kraken's implementation of an **actor**, therefore Kraken Framework as a whole can be defined as **actor-based system**, but because of chosen naming convention all of documentation pages referes to it as **container-based system**. Keep in mind, that both of these definitions are in fact different names for the same concept.
+Container is an instance of any given runtime that *contains* both runtime's logic and all of its services. Container is Kraken's implementation of an **actor**, therefore Kraken Framework as a whole can be defined as **actor-based system**, but because of chosen naming convention all of documentation pages refers to it as **container-based system**. Keep in mind, that both of these definitions are in fact different names for the same concept.
 
 The most important parts that composes typical container are [state](#state), [behaviour](#behaviour), [messaging mechanisms](#messaging), [supervision mechanisms](#supervision) and [child containers](#child-containers). All of them are encapsulated behind the [container reference](#container-reference). Noteworthy aspect about containers is that they have an explicit lifecycle and are not automatically destroyed when no longer referenced. It is your responsibility to make sure that each container will eventually be destroyed. This gives you control over how resources are released when any container is destroyed.
 
@@ -54,15 +54,15 @@ The `created` state is being granted to container after it has finished all of i
 
 #### The `destroyed` State
 
-The `destroyed` state is the first and the last state of container lifecycle. It is granted to container eiter shortly after creation of runtime or just before destructing its runtime. `destroyed` state might change only to `created` state.
+The `destroyed` state is the first and the last state of container lifecycle. It is granted to container either shortly after creation of runtime or just before destructing its runtime. `destroyed` state might change only to `created` state.
 
 #### The `started` State
 
-The `started` state is the state that occurrs when not only Kraken but also your application logic has started. `started` state might change to either `stopped` or `failed`.
+The `started` state is the state that occurs when not only Kraken but also your application logic has started. `started` state might change to either `stopped` or `failed`.
 
 #### The `stopped` State
 
-The `stopped` state is the state in which your application logic should close all publicly opened ports and halt all procesing until its started again. It might be compared to maintenance mode in other popular frameworks. The `stopped` state might change once again to `started` state or to `destroyed` one.
+The `stopped` state is the state in which your application logic should close all publicly opened ports and halt all processing until its started again. It might be compared to maintenance mode in other popular frameworks. The `stopped` state might change once again to `started` state or to `destroyed` one.
 
 #### The `failed` State
 
@@ -71,7 +71,7 @@ The `failed` state is special kind of state that is invoked during `started` sta
 <a name="behaviour"></a>
 ### Behaviour
 
-Behaviour of a container is the custom application logic that you provided. It combines set of commands, services and cyclic operations. The bahviour is set on the runtime creation, but may change over time as your application architecture reacts to your application needs or container itself changes its state. The initial behavior defined during construction of the container is special in the sense that a restart of the container will reset its behavior to this initial one.
+Behaviour of a container is the custom application logic that you provided. It combines set of commands, services and cyclic operations. The behaviour is set on the runtime creation, but may change over time as your application architecture reacts to your application needs or container itself changes its state. The initial behavior defined during construction of the container is special in the sense that a restart of the container will reset its behavior to this initial one.
 
 <a name="messaging"></a>
 ### Messaging

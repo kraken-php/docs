@@ -177,7 +177,7 @@ BaseEventEmitter is implementation of synchronous event emitter.
 
     class EventEmitter implements EventEmitterInterface
 
-EventEmitter is universal event emitter that by default behaves as synchronous emitter, but changes to asynchronous when provied with loop instance.
+EventEmitter is universal event emitter that by default behaves as synchronous emitter, but changes to asynchronous when provided with loop instance.
 
 <a name="event-emitter-interface"></a>
 ### EventEmitterInterface

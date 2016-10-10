@@ -117,7 +117,7 @@ The container's state might be fetched using following syntax:
 <a name="triggering-the-supervisor"></a>
 ### Triggering The Supervisor
 
-Triggering supervisor will force your container to stop applicaiton logic and enter `failed` state. You can read more about this in [supervision article](/docs/{{version}}/supervision). To trigger the supervision use `fail` method.
+Triggering supervisor will force your container to stop application logic and enter `failed` state. You can read more about this in [supervision article](/docs/{{version}}/supervision). To trigger the supervision use `fail` method.
 
     $runtime->fail($exception, $params);
 
@@ -167,7 +167,7 @@ Creating and destroying the children might be done using create and destroy pref
 <a name="starting-and-stopping-children"></a>
 ### Starting & Stopping Children
 
-Starting and stopping the children might be done in similar way as creating and destroying them. The difference is that you have to use start and stop prefxed methods:
+Starting and stopping the children might be done in similar way as creating and destroying them. The difference is that you have to use start and stop prefixed methods:
 
 #### Starting Container
 
@@ -243,7 +243,7 @@ RuntimeContainer is a concrete class that contains all internal data of containe
 
     class RuntimeModel implements RuntimeModelInterface
 
-RuntimeModel is internal imlementation working behind RuntimeContainer class.
+RuntimeModel is internal implementation working behind RuntimeContainer class.
 
 <a name="runtime-model-interface"></a>
 ### RuntimeModelInterface
@@ -282,7 +282,7 @@ RuntimeManager is a class that allows managing container's children.
 This section contains list of most important directories existing inside of component. It **does not include all** directories.
 
 <a name="command"></a>
-### Commnd
+### Command
 
 Command folder contains pre-defined container-related commands.
 

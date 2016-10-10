@@ -39,9 +39,9 @@ Supervision features:
 
 This section contains terminology, useful concepts and definitions, that might be helpful to learn to fully understand this component purpose.
 
-### Superivison
+### Supervison
 
-Supervision is dependency relationship between supervisor and supervised code, in which supervisor must respond to its supervised code exeuction failures. When a failure is detected, the supervisor should stop execution of supervised code and react accordingly. Supervision systems are usualy used in distributed systems, in which parent process supervises its children. 
+Supervision is dependency relationship between supervisor and supervised code, in which supervisor must respond to its supervised code execution failures. When a failure is detected, the supervisor should stop execution of supervised code and react accordingly. Supervision systems are usually used in distributed systems, in which parent process supervises its children. 
 
 ### Supervisor
 
@@ -59,7 +59,7 @@ This section contains examples and patterns that can be used with described comp
 <a name="registering-problem-solvers"></a>
 ### Registering Problem Solvers
 
-Registering problem solvers can be done via pssing its instance or class name to supervisor constructor:
+Registering problem solvers can be done via passing its instance or class name to supervisor constructor:
 
     $supervisor = new Supervisor($factory, [], [
         CustomException::class => CustomSolver::class

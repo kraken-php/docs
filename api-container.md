@@ -59,7 +59,7 @@ Service provider is object which main purpose is to provide information how give
 
 ### Service
 
-Service is an abstract concept that usually referrs to an object which is created for a specific purpose and is used throughout your application whenever you need the specific functionality it provides.
+Service is an abstract concept that usually referers to an object which is created for a specific purpose and is used throughout your application whenever you need the specific functionality it provides.
 
 <a name="examples"></a>
 ## Examples
@@ -203,14 +203,14 @@ This class represents concrete implementation of dependency injection container.
 
     interface ContainerAwareInterface
 
-Interface for container aware objects. Its main purpose is to provide setter and getter methods for setting and obtaining container instance withi objects composition.
+Interface for container aware objects. Its main purpose is to provide setter and getter methods for setting and obtaining container instance within objects composition.
 
 <a name="service-provider"></a>
 ### ServiceProvider
 
     class ServiceProvider implements ServiceProviderInterface
 
-Abstract service provider which should be extened by each provider used together with service container.
+Abstract service provider which should be extended by each provider used together with service container.
 
 <a name="service-provider-interface"></a>
 ### ServiceProviderInterface

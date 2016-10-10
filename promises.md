@@ -30,7 +30,7 @@ Kraken provides support for Promises implementing [Promise/A+](https://promisesa
 <a name="description"></a>
 ### Description
 
-Promises are a concurrency primitives that represent future value of an asynchronous operation. They simplify writting of asynchronous systems allowing sequential-like programming synatax. 
+Promises are a concurrency primitives that represent future value of an asynchronous operation. They simplify writing of asynchronous systems allowing sequential-like programming synatax. 
 
 <a name="promises-and-events"></a>
 ### Promises & Events
@@ -111,7 +111,7 @@ Cancelling a Promise is a process of setting string value or Throwable to **Pend
 
 #### Resolution Forwarding
 
-Resolvig a promise forwards resolution value from it to the next promise. Each call to `then` method returns a new promise that will resolve with the returned value of the previous one. This creates a promise chain.
+Resolving a promise forwards resolution value from it to the next promise. Each call to `then` method returns a new promise that will resolve with the returned value of the previous one. This creates a promise chain.
 
     $deferred = new Deferred();
     $deferred
@@ -220,7 +220,7 @@ One of the most interesting and useful things about promises, are the fact, that
 <a name="then-vs-done"></a>
 ### Then vs Done
 
-At first `then` and `done` methods might seem very similar. However, there are important distinctions between the two. The intent of `then` is to transform a promise's value and to pass or return a new promise while the intent of `done` is to consume a promise's value, transferring all responsibility to your code. The `done` method shoul be called only in the outermost parts of promise chain.
+At first `then` and `done` methods might seem very similar. However, there are important distinctions between the two. The intent of `then` is to transform a promise's value and to pass or return a new promise while the intent of `done` is to consume a promise's value, transferring all responsibility to your code. The `done` method should be called only in the outermost parts of promise chain.
 
     $deferred = new Deferred();
     $promise = $deferred->getPromise();
@@ -252,7 +252,7 @@ The `all` method returns a promise that will be resolved only once all the items
 
     Promise::any($promisesOrValues);
 
-The `any` method returns a promise that will be resolved when any of the promises in passed collection have resolved. The resolution value of the returned promise will be the same as resolution value of a promse that have resolved.
+The `any` method returns a promise that will be resolved when any of the promises in passed collection have resolved. The resolution value of the returned promise will be the same as resolution value of a promise that have resolved.
 
 <a name="the-map-method"></a>
 ### The `map` Method

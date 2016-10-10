@@ -47,7 +47,7 @@ This section contains terminology, useful concepts and definitions, that might b
 
 ### Asynchronous Processing
 
-Asynchronous processing is an approach of processig instructions in non-blocking way, that only initiates the oprations without wait for response. The response is discovered later using specially designed mechanisms. You can learn more in [asynchronity section](/docs/{{version}}/asynchronity). 
+Asynchronous processing is an approach of processing instructions in non-blocking way, that only initiates the operations without wait for response. The response is discovered later using specially designed mechanisms. You can learn more in [asynchronity section](/docs/{{version}}/asynchronity). 
 
 <a name="examples"></a>
 ## Examples

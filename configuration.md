@@ -25,7 +25,7 @@ In contrast to many popular PHP frameworks, Kraken has been designed for multi-t
 
 There are several paths that will be checked for configuration files existence. Firstly, Kraken will check for `data/config/Process/$alias/config.php` or `data/config/Thread/$alias/config.php` depending on runtime unit type. If these files are not found, then `data/config/Process/config.php` or `data/config/Thread/config.php` will be fetched as default configuration files. After finding first valid configuration file in previously depicted order, no other paths are checked.
 
-> {tip} It is good idea to keep default configuration files for Processes and Threades universal, so you don't have to create separate configurations for each unique runtime. Additional, non-default files should be created only when really needed.
+> {tip} It is good idea to keep default configuration files for Processes and Threads universal, so you don't have to create separate configurations for each unique runtime. Additional, non-default files should be created only when really needed.
 
 <a name="importing-files"></a>
 ### Importing Files
@@ -86,7 +86,7 @@ These options defines default IPC channels that container uses. By default Krake
 <a name="configuration-variables"></a>
 ## Configuration Variables
 
-Configuration variables are placholders for values that will be replacced in configuration dynamically during initialization process. They allows you to create options that adapts automatically to runtime context.
+Configuration variables are placeholders for values that will be replacced in configuration dynamically during initialization process. They allows you to create options that adapts automatically to runtime context.
 
 Variables can be read using '%varName%' notation. Example:
 
@@ -121,7 +121,7 @@ Environment variables put in 'config.env/.env' file can be accessed using 'env.'
 <a name="functional-variables"></a>
 ### Functional Variables
 
-Kraken allows your configuration to be paramterized using custom functions for retrieving values dynamically. Using '%func.myFunc%' will tell Kraken to execute current container's myFunc() method and replace variable with its returned value.
+Kraken allows your configuration to be parameterized using custom functions for retrieving values dynamically. Using '%func.myFunc%' will tell Kraken to execute current container's myFunc() method and replace variable with its returned value.
 
 <a name="defining-custom-variables"></a>
 ### Defining Custom Variables
@@ -139,6 +139,6 @@ And retrieve them by using `%customVariable%` syntax.
 <a name="environment"></a>
 ## Environment
 
-All of the environemt settings are stored in the `data/config.env` directory. In current Kraken implementation this '.env' file is one and it is shared among all runtimes. 
+All of the environment settings are stored in the `data/config.env` directory. In current Kraken implementation this '.env' file is one and it is shared among all runtimes. 
 
-Aside from configurating your application, it is very important to also tweak application [bootstrap files](/docs/{{version}}/bootstrap).
+Aside from configuring your application, it is very important to also tweak application [bootstrap files](/docs/{{version}}/bootstrap).

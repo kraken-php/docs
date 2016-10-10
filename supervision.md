@@ -53,7 +53,7 @@ To apply the strategy one should modify `supervision.base` and `supervision.remo
 
 Triggering the supervisor is done automatically by all unhandled errors and exceptions. It might also be done manually by calling `fail` method of `Kraken\Runtime\RuntimeContainerInterface` which references current container. When trigger happens, your application changes state from `started` to `failed`, switches its workflow and ceases all non-solving related operations. In short, it switches your container to maintenance mode. To mark the problem as solved, one of the solvers have to call `succeed` method, which will switch back `failed` state to the `started` one and resume unfinished callbacks. It is very important to know, that solvers do not call this method automatically, meaning you have to remember about this yourself. It is a good practice to keep `ContainerContinue` solver at the end of each solving chain.
 
-> {warning} Calling `succeed` method will automatically set your container flow back to the default state halting the rest of solvers, as the problem has been marked as solved. That's why it is imporant to keep succeeding as the last solving directive.
+> {warning} Calling `succeed` method will automatically set your container flow back to the default state halting the rest of solvers, as the problem has been marked as solved. That's why it is important to keep succeeding as the last solving directive.
 
 <a name="delegating-solving"></a>
 ### Delegating Solving

@@ -32,7 +32,7 @@ The best way of starting new project is to install Kraken Skeleton Application. 
 
     composer create-project --prefer-dist kraken-php/kraken .
 
-After the process is finished, you will find in downloaded package, minimal configuration, empty containers and boot scripts. Everything yout need to start working with Kraken Framework.
+After the process is finished, you will find in downloaded package, minimal configuration, empty containers and boot scripts. Everything you need to start working with Kraken Framework.
 
 <a name="configuration"></a>
 ### Configuration

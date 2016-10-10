@@ -1,4 +1,4 @@
-# Kraken Frmework Official Documentation
+# Kraken Framework Official Documentation
 
 <br>
 <p align="center">

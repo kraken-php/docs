@@ -18,12 +18,12 @@ Kraken Client is the command-line interface included with Kraken Framework. It s
 <a name="working-with-commands"></a>
 ## Working With Commands
 
-All of them commands provied with Kraken Client are either processed locally for commands that do not need to contact any of running runtime containers or remotely. Remote commands are in the first place send to Kraken Server, that then decides if it should deal with the command itself or send it corresponding runtime container. That's why it is important that you [start console server](/docs/{{version}}/console-server) before going further in this article.
+All of them commands provided with Kraken Client are either processed locally for commands that do not need to contact any of running runtime containers or remotely. Remote commands are in the first place send to Kraken Server, that then decides if it should deal with the command itself or send it corresponding runtime container. That's why it is important that you [start console server](/docs/{{version}}/console-server) before going further in this article.
 
 <a name="invoking-commands"></a>
 ### Invoking Commands
 
-You are able to invoke any of the provied commands using following syntax:
+You are able to invoke any of the provided commands using following syntax:
 
     php kraken [command] [options] [arguments]
 
@@ -93,7 +93,7 @@ Start commands are used to signal that some thing needs to be started. Command f
 
 Stop commands are used to signal that some thing needs to be stopped. Command fires `stop` event inside given thing, so it could stop it processing - for example close its public ports. Stopping might be compared to maintenance mode.
 
-> {notice} It is important to understand difference between `destroy` and `stop` commands. The first one destroys object completeley and frees it memory, while second signals only that existing instance should temporarily stop its processing, but keep all data.
+> {notice} It is important to understand difference between `destroy` and `stop` commands. The first one destroys object completely and frees it memory, while second signals only that existing instance should temporarily stop its processing, but keep all data.
 
 #### The `status` Type
 
@@ -112,7 +112,7 @@ Project commands refers to manipulating on whole project. It is important to kno
 
 #### The `arch` Commands
 
-Arch(itecture) commands are special type of commands that allows you to manipulating on selected container recursively. For example stoping container using `arch:stop` command will also stop all of its children.
+Arch(itecture) commands are special type of commands that allows you to manipulating on selected container recursively. For example stopping container using `arch:stop` command will also stop all of its children.
 
 #### The `container` Commands
 
@@ -120,7 +120,7 @@ Container commands are the commands that will be directly passed to specified co
 
 #### The `runtime` Commands
 
-Runtime commands are the abstractions of `process` and `thread` commands that works on both process and thread based containers. The main difference between this family of command and the `container` commands are the fact, that `runtime` operate inidrectly using runtime ancestor. For example using `runtime:destroy A B` command will ask `A` container to destroy its child aliased as `B`.
+Runtime commands are the abstractions of `process` and `thread` commands that works on both process and thread based containers. The main difference between this family of command and the `container` commands are the fact, that `runtime` operate indirectly using runtime ancestor. For example using `runtime:destroy A B` command will ask `A` container to destroy its child aliased as `B`.
 
 #### The `process` Commands
 

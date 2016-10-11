@@ -83,7 +83,7 @@ Kraken Framework allows developer to write asynchronous code using [events](#eve
 <a name="events"></a>
 ### Events
 
-Events allow you to write loose-coupled services that communicates between themselves using transfer of special signals called events. Kraken implements event-driven architecture using [Kraken/Event](/docs/{{version}}/api-event) component. You can read more about how events can be used in [events section](/docs/{{version}}/events#emitting-and-listening).
+Events allow you to write loose-coupled services that communicate between themselves using transfer of special signals called events. Kraken implements event-driven architecture using [Kraken/Event](/docs/{{version}}/api-event) component. You can read more about how events can be used in [events section](/docs/{{version}}/events#emitting-and-listening).
 
 <a name="messages"></a>
 ### Messages

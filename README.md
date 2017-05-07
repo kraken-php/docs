@@ -53,6 +53,7 @@ This repository contains official documentation for [Kraken Framework](https://g
     - [Promise](api-promise.md)
     - [Runtime](api-runtime.md)
     - [Stream](api-stream.md)
+    - [SSH](api-ssh.md)
     - [Supervision](api-supervision.md)
     - [Throwable](api-throwable.md)
 
